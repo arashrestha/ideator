@@ -1,4 +1,5 @@
 $main-blue: #337ab7;
+$footer-height: 45px;
 $primary-font: 'Open Sans', sans-serif;  
 $secondary-font: 'Dosis', sans-serif;  
 
@@ -19,3 +20,29 @@ html,body{
 }
 
 .label,.glyphicon { margin-right:5px; }
+
+/* Styles go here */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -45px;
+  /* Pad bottom by footer height */
+  padding: 0 0 45px;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  height: $footer-height;
+}
