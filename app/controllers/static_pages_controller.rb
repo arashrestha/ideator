@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
-	def about 
-
+	def random 
+		@idea = Idea.order("RANDOM()").first
+	end
+	def about
 	end
 end
